@@ -86,7 +86,7 @@ const Blog = () => {
                 <img
                   src={author1}
                   alt="Author 1"
-                  className="w-14 h-14 rounded-full object-cover border-2 border-gray-300"
+                  className="w-14 h-14 rounded-full object-cover border-2 border-gray-400"
                 />
                 <div className="ml-4">
                   <p className="text-base font-semibold text-gray-800">

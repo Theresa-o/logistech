@@ -1,12 +1,4 @@
-interface BlogCardProps {
-  image: string;
-  title: string;
-  date: string;
-  content: string;
-  authorImage: string;
-  authorName: string;
-  authorRole: string;
-}
+import { BlogCardProps } from "../types/types";
 
 const BlogCard = ({
   image,
@@ -43,7 +35,7 @@ const BlogCard = ({
               <img
                 src={authorImage}
                 alt="Author"
-                className="w-14 h-14 rounded-full object-cover border-2 border-gray-300"
+                className="w-14 h-14 rounded-full object-cover border-2 border-gray-400"
               />
               <div className="ml-4">
                 <p className="text-base font-semibold text-gray-800">

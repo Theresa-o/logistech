@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Logo from "../../assets/images/logo2.svg";
 import signIn from "../../assets/images/signIn.svg";
 import Username from "../../assets/images/username.svg";
 import EyeCheckerIcon from "../../assets/images/eyeChecker.svg";
@@ -31,8 +30,7 @@ const SignIn = () => {
 
   return (
     <div className="bg-purple-20">
-      {" "}
-      <div className="rounded-lg lg:max-w-[75%] flex justify-center items-center h-screen mx-auto ">
+      <div className="rounded-lg lg:max-w-[75%] flex justify-center items-center mx-auto  h-screen ">
         {" "}
         <div className="flex  ">
           <div className="flex-1 shadow-xl hidden md:block rounded-l-lg bg-white w-1/2">
@@ -48,12 +46,14 @@ const SignIn = () => {
             </div>
           </div>
           <div className="flex-1 bg-purple-200 text-center rounded-r-lg">
-            <div className="flex justify-center items-center md:hidden">
-              <img src={Logo} alt="Logistech logo" className="h-60 w-60" />
+            <div className="flex justify-center md:hidden items-center mx-auto my-3 md:my-10">
+              <p className="text-gray-500">Logistech</p>
             </div>
             <div>
-              <h4 className="text-white text-xl mt-8 mb-1">Welcome Back!</h4>
-              <p className="text-white mb-3">
+              <h4 className="text-white text-base md:text-lg mt-4 md:mt-8 mb-1">
+                Welcome Back!
+              </h4>
+              <p className="text-white mb-3 text-base ">
                 Sign in to continue with Logistech
               </p>
             </div>
@@ -70,7 +70,7 @@ const SignIn = () => {
                     onChange={(e) => setUsername(e.target.value)}
                     placeholder="Enter your username"
                     className="w-full p-3 rounded-md bg-purple-100 hover:outline-none focus:outline-none text-purple-50 font-light text-sm"
-                  />{" "}
+                  />
                   <img
                     src={Username}
                     alt="username icon"
@@ -97,7 +97,7 @@ const SignIn = () => {
                   {inputIcon}
                 </div>
               </div>
-              <div className=" flex justify-between text-white leading-3 text-sm md:text-base mt-6 mb-4">
+              {/* <div className="flex justify-between text-white leading-3 text-sm md:text-base mt-6 mb-4">
                 <div className="">
                   <input type="checkbox" name="t&c" id="t&c" />
                   <label htmlFor="t&c" className="mx-1 ">
@@ -105,6 +105,20 @@ const SignIn = () => {
                   </label>
                 </div>
                 <div>Forgot password?</div>
+              </div> */}
+
+              <div className="flex flex-col md:flex-row justify-between text-white leading-3 text-sm md:text-base mt-6 mb-4">
+                <div className="flex items-center mb-2 md:mb-0">
+                  <input type="checkbox" name="t&c" id="t&c" />
+                  <label htmlFor="t&c" className="ml-2">
+                    Remember me
+                  </label>
+                </div>
+                <div className="mt-2 md:mt-0">
+                  <a href="/forgot-password" className="underline">
+                    Forgot password?
+                  </a>
+                </div>
               </div>
 
               <div className="mt-5">
@@ -115,7 +129,7 @@ const SignIn = () => {
                   Sign Up
                 </button>
               </div>
-              <p className="text-white text-sm leading-3 mb-2 mt-4">
+              <p className="text-white text-sm leading-3 mb-10 md:mb-2 mt-4">
                 Don't have an account?{" "}
                 <Link to="/" className="underline">
                   Sign Up{" "}
