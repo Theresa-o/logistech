@@ -12,12 +12,12 @@ const BlogCard = ({
   return (
     <div className="mb-6">
       <section>
-        <div className="">
-          <div>
+        <div>
+          <div className="relative overflow-hidden h-80">
             <img
               src={image}
               alt="Blog post"
-              className="h-50 w-70 object-cover"
+              className=" w-70 object-cover transition-transform duration-200 transform hover:translate-x-2"
             />
           </div>
           <div className="my-6">

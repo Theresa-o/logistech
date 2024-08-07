@@ -1,6 +1,9 @@
 import carUser from "../../assets/images/caruser.jpg";
 import author1 from "../../assets/images/author1.jpg";
-import BlogCard from "../../components/blogCard";
+import BlogCard from "../../components/BlogCard";
+import logistics from "../../assets/images/logistics.jpg";
+import car from "../../assets/images/car.jpg";
+import road from "../../assets/images/road.jpg";
 
 const blogData = [
   {
@@ -14,7 +17,7 @@ const blogData = [
     authorRole: "Product Manager",
   },
   {
-    image: carUser,
+    image: logistics,
     title: "The Future of Logistics in Nigeria",
     date: "July 15, 2024",
     content:
@@ -24,7 +27,7 @@ const blogData = [
     authorRole: "Product Manager",
   },
   {
-    image: carUser,
+    image: car,
     title: "Maximizing Your Car's Potential",
     date: "August 05, 2024",
     content:
@@ -34,7 +37,7 @@ const blogData = [
     authorRole: "Product Manager",
   },
   {
-    image: carUser,
+    image: road,
     title: "What you should know about our road system",
     date: "August 19, 2024",
     content:
@@ -57,11 +60,11 @@ const Blog = () => {
             Latest & Trending Blog Post
           </h1>
           <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-[60%] ">
+            <div className="w-full md:w-[60%] relative overflow-hidden">
               <img
                 src={carUser}
                 alt="Blog car user"
-                className="md:h-[350px] w-full object-cover"
+                className="md:h-[350px] w-full object-cover transition-transform duration-200 transform hover:translate-x-2"
               />
             </div>
             <div className="mt-4 md:mt-0 md:ml-4 md:w-[40%] py-6 ">
