@@ -6,11 +6,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SignIn from "./pages/sign-in/SignIn.tsx";
 import Blog from "./pages/blog/Blog.tsx";
 import ThemeProvider from "./context/ThemeProvider.tsx";
+import ErrorPage from "./pages/error-page/ErrorPage.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/sign-in",

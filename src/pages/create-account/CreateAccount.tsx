@@ -37,17 +37,11 @@ const CreateAccount = ({ theme }: DarkModeProps) => {
               theme === "dark" ? "bg-gray-400" : "bg-purple-200"
             } rounded-r-lg text-center w-1/2`}
           >
-            <div className="flex justify-center md:hidden items-center mx-auto my-10">
-              <p
-                className={`${
-                  theme === "dark" ? "text-white" : "text-gray-500"
-                }`}
-              >
-                Logistech
-              </p>
+            <div className="flex justify-center md:hidden items-center mx-auto my-4 md:my-10">
+              <p className="text-white">Logistech</p>
             </div>
             <div>
-              <h4 className="text-white text-base md:text-lg mt-8 mb-1">
+              <h4 className="text-white text-base md:text-lg mt-4 md:mt-8 mb-1">
                 Let's get started
               </h4>
               <p className="text-white mb-3 text-base ">

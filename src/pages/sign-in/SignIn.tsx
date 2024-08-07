@@ -46,8 +46,8 @@ const SignIn = () => {
             </div>
           </div>
           <div className="flex-1 bg-purple-200 text-center rounded-r-lg">
-            <div className="flex justify-center md:hidden items-center mx-auto my-3 md:my-10">
-              <p className="text-gray-500">Logistech</p>
+            <div className="flex justify-center md:hidden items-center mx-auto my-4 md:my-10">
+              <p className="text-white">Logistech</p>
             </div>
             <div>
               <h4 className="text-white text-base md:text-lg mt-4 md:mt-8 mb-1">
@@ -97,15 +97,6 @@ const SignIn = () => {
                   {inputIcon}
                 </div>
               </div>
-              {/* <div className="flex justify-between text-white leading-3 text-sm md:text-base mt-6 mb-4">
-                <div className="">
-                  <input type="checkbox" name="t&c" id="t&c" />
-                  <label htmlFor="t&c" className="mx-1 ">
-                    Remember me
-                  </label>
-                </div>
-                <div>Forgot password?</div>
-              </div> */}
 
               <div className="flex flex-col md:flex-row justify-between text-white leading-3 text-sm md:text-base mt-6 mb-4">
                 <div className="flex items-center mb-2 md:mb-0">

@@ -16,16 +16,11 @@ export default {
           200: "#314047",
           300: "#CED1D2",
           400: "#31364B",
-          500: "#1A1A2E", // Dark background
-          600: "#0F0F1E", // Darker background
+          500: "#1A1A2E",
+          600: "#0F0F1E",
         },
         orange: {
           200: "#FF4748",
-          300: "#D43C3C", // Darker shade for dark mode
-        },
-        blue: {
-          100: "#3A3A5A", // Accent color for dark mode
-          200: "#2A2A4A", // Darker accent
         },
       },
     },
